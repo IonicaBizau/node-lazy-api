@@ -1,0 +1,11 @@
+{
+  "name": "lazyapi",
+  "version": "1.0.0",
+  "description": "A module to load API files when they are really used.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net/)",
+  "license": "ISC"
+}
