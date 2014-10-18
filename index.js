@@ -5,8 +5,12 @@ var LazyApi = module.exports = function (scope, name, path) {
     }
     Object.defineProperty(scope, name, {
         get: function () {
-            return require(path);
+            return LazyApi.returnHandler.call(this, path, name, scope);
         }
       , enumerable: true
     });
+};
+
+LazyApi.returnHandler = function (path) {
+    return require(path);
 };
