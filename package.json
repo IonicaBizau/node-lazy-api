@@ -7,5 +7,22 @@
     "test": "node test"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net/)",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:IonicaBizau/node-lazy-api.git"
+  },
+  "keywords": [
+    "minimalist",
+    "node",
+    "lazy",
+    "API"
+  ],
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/node-lazy-api/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/node-lazy-api"
 }
