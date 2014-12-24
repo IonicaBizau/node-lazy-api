@@ -1,11 +1,11 @@
 {
-  "name": "lazyapi",
+  "name": "lazy-api",
   "version": "1.0.0",
-  "description": "A module to load API files when they are really used.",
-  "main": "index.js",
+  "description": "A minimalist module for loading API resources when they are used.",
+  "main": "lib/index",
   "scripts": {
     "test": "node test"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net/)",
-  "license": "ISC"
+  "license": "MIT"
 }
