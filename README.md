@@ -20,7 +20,7 @@ $ npm install lazy-api
 # Example
 ```js
 // Dependencies
-var LazyApi = require("lazy-api");
+var LazyApi = require("../lib");
 
 var Apis = {};
 
@@ -45,6 +45,11 @@ LazyApi.returnHandler = function (path, name, scope) {
 LazyApi(Apis, "another", __dirname + "/another");
 
 // Call the method (this will load the file)
+Apis.another.method({foo: "bar"}, function (err, d) {
+    console.log(err || d);
+});
+
+// Call the method again (the file is already loaded);
 Apis.another.method({foo: "bar"}, function (err, d) {
     console.log(err || d);
 });
