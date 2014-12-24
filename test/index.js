@@ -27,3 +27,8 @@ LazyApi(Apis, "another", __dirname + "/another");
 Apis.another.method({foo: "bar"}, function (err, d) {
     console.log(err || d);
 });
+
+// Call the method again (the file is already loaded);
+Apis.another.method({foo: "bar"}, function (err, d) {
+    console.log(err || d);
+});
