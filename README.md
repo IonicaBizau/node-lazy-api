@@ -20,7 +20,7 @@ $ npm install lazy-api
 # Example
 ```js
 // Dependencies
-var LazyApi = require("../lib");
+var LazyApi = require("lazy-api");
 
 var Apis = {};
 
