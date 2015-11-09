@@ -1,23 +1,21 @@
-Lazy API
-========
+# lazy-api [![Support this project][donate-now]][paypal-donations]
+
 A minimalist module for loading API resources when they are used.
 
-# Philosophy
-Having a big service API wrapper written in NodeJS, most of people create
-a `for` loop and load all API files before doing anything. The files are
-loaded in RAM. So, It's not so RAM friendly to load them this way.
+## Philosophy
 
-With the `lazy-api` module this issue is fixed. Lazy API loads the file
-when the API method is called. If an application only uses one file,
-only that file will be loaded in RAM. The other will not be loaded.
+Having a big service API wrapper written in NodeJS, most of people create a `for` loop and load all API files before doing anything. The files are loaded in RAM. So, It's not so RAM friendly to load them this way.
 
-# Installation
+With the `lazy-api` module this issue is fixed. Lazy API loads the file when the API method is called. If an application only uses one file, only that file will be loaded in RAM. The other will not be loaded.
+
+## Installation
 
 ```sh
-$ npm install lazy-api
+$ npm i -g lazy-api
 ```
 
-# Example
+## Example
+
 ```js
 // Dependencies
 var LazyApi = require("lazy-api");
@@ -55,39 +53,48 @@ Apis.another.method({foo: "bar"}, function (err, d) {
 });
 ```
 
-# Documentation
-## `LazyApi(scope, name, path)`
+## Documentation
+
+### `LazyApi(scope, name, path)`
 Defines the new property in the scope, adding the `get` handler.
 
-### Params
+#### Params
 - **Object** `scope`: The scope object (default: `this`)
 - **String** `name`: Property (API) name
 - **String** `path`: The path to JavaScript/JSON file.
 
-### Return
+#### Return
 - **Object** The object where the property was defined.
 
-## `returnHandler(path, name, scope)`
+### `returnHandler(path, name, scope)`
 The default function that will be called when a property is accessed.
 This function can be overrided with custom code.
 
-### Params
+#### Params
 - **String** `path`: The path to JavaScript/JSON file.
 - **String** `name`: Property (API) name
 - **Object** `scope`: The scope object (default: `this`)
 
-### Return
+#### Return
 - **Object** The export object of a JSON/JavaScript file.
 
 ## How to contribute
-1. File an issue in the repository, using the bug tracker, describing the
-   contribution you'd like to make. This will help us to get you started on the
-   right foot.
-2. Fork the project in your account and create a new branch:
-   `your-great-feature`.
-3. Commit your changes in that branch.
-4. Open a pull request, and reference the initial issue in the pull request
-   message.
+Have an idea? Found a bug? See [how to contribute][contributing].
+
+## Where is this library used?
+If you are using this library in one of your projects, add it in this list. :sparkles:
+
+ - [`brightbox`](https://github.com/IonicaBizau/node-brightbox) by Ionică Bizău
 
 ## License
-See the [LICENSE](./LICENSE) file.
+
+[KINDLY][license] © [Ionică Bizău][website]
+
+[license]: http://ionicabizau.github.io/kindly-license/?author=Ionic%C4%83%20Biz%C4%83u%20%3Cbizauionica@gmail.com%3E&year=2014
+
+[website]: http://ionicabizau.net
+[paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVXDDLKKLQRJW
+[donate-now]: http://i.imgur.com/6cMbHOC.png
+
+[contributing]: /CONTRIBUTING.md
+[docs]: /DOCUMENTATION.md
