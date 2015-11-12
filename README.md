@@ -11,7 +11,7 @@ With the `lazy-api` module this issue is fixed. Lazy API loads the file when the
 ## Installation
 
 ```sh
-$ npm i -g lazy-api
+$ npm i lazy-api
 ```
 
 ## Example
