@@ -1,3 +1,4 @@
+
 # lazy-api [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/lazy-api.svg)](https://www.npmjs.com/package/lazy-api) [![Downloads](https://img.shields.io/npm/dt/lazy-api.svg)](https://www.npmjs.com/package/lazy-api) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > A minimalist module for loading API resources when they are used.
@@ -8,13 +9,17 @@ Having a big service API wrapper written in NodeJS, most of people create a `for
 
 With the `lazy-api` module this issue is fixed. Lazy API loads the file when the API method is called. If an application only uses one file, only that file will be loaded in RAM. The other will not be loaded.
 
-## Installation
+
+## :cloud: Installation
 
 ```sh
 $ npm i --save lazy-api
 ```
 
-## Example
+
+## :clipboard: Example
+
+
 
 ```js
 // Dependencies
@@ -53,7 +58,8 @@ Apis.another.method({foo: "bar"}, function (err, d) {
 });
 ```
 
-## Documentation
+## :memo: Documentation
+
 
 ### `LazyApi(scope, name, path)`
 Defines the new property in the scope, adding the `get` handler.
@@ -78,15 +84,18 @@ This function can be overrided with custom code.
 #### Return
 - **Object** The export object of a JSON/JavaScript file.
 
-## How to contribute
+
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
- - [`brightbox`](https://github.com/IonicaBizau/node-brightbox)
 
-## License
+ - [`brightbox`](https://github.com/IonicaBizau/node-brightbox)—A Node.JS module, which provides an object oriented wrapper for the Brightbox API.
+
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
