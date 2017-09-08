@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Defines the new property in the scope, adding the `get` handler.
 
 #### Params
+
 - **Object** `scope`: The scope object (default: `this`)
 - **String** `name`: Property (API) name
 - **String** `path`: The path to JavaScript/JSON file.
@@ -18,6 +19,7 @@ The default function that will be called when a property is accessed.
 This function can be overrided with custom code.
 
 #### Params
+
 - **String** `path`: The path to JavaScript/JSON file.
 - **String** `name`: Property (API) name
 - **Object** `scope`: The scope object (default: `this`)
